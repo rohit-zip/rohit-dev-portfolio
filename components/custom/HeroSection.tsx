@@ -2,20 +2,19 @@ import React from 'react';
 import {Spotlight} from "@/components/aceternity/Spotlight";
 import {TextGenerateEffect} from "@/components/aceternity/TextGenerateEffect";
 import Particles from "@/components/aceternity/Particles";
-import {HoverBorderGradient} from "@/components/aceternity/HoverBorderGradient";
-import {IoMdCloudDownload} from "react-icons/io";
 import BlurIn from "@/components/aceternity/TextBlurIn";
+import ResumeButton from "@/components/custom/ResumeButton";
 
 const HeroSection = ({
     small = "Rohit's Portfolio",
     title = "Hi, I'm Rohit Parihar, Passionate Java Full Stack Developer"
                      }) => {
     return (
-        <div className="pt-10 pb-8 md:pb-20 md:pt-36">
+        <div className="pt-10 pb-0 md:pt-36">
 
             <Particles
                 className="absolute inset-0"
-                quantity={160}
+                quantity={250}
                 ease={80}
                 color={"#ffffff"}
                 refresh
@@ -49,21 +48,12 @@ const HeroSection = ({
                     </p>
                 </div>
 
-                <div className={"mt-10"}>
-                    <HoverBorderGradient
-                        containerClassName="rounded-full"
-                        as="button"
-                        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 px-10"
-                    >
-                        <IoMdCloudDownload className={"text-xl"} />
-                        <span>Download CV</span>
-                    </HoverBorderGradient>
-                </div>
+                <ResumeButton />
 
                 <div className={"mt-10"}>
                     <BlurIn
                         word={"A Java Full Stack Developer with 2 Years of experience, skilled in backend (Java Spring Boot, Microservices, PostgreSQL, MySQL, Elasticsearch) and frontend (React JS, Next JS, Redux, Axios, React Query) development. Proficient in creating scalable, high-performance systems and responsive user interfaces. Experienced in Agile methodologies and Test-Driven Development (TDD), ensuring high-quality software delivery. Actively contributes to the open-source project \"Bloggios,\" featuring a microservices architecture, Spring Boot backend, Next JS and React JS frontend, and Flutter mobile app components, showcasing commitment to community-driven development and knowledge sharing."}
-                        className={"text-lg tracking-wide font-light text-center"}
+                        className={"text-sm md:text-lg tracking-wide font-light text-center"}
                     />
                 </div>
             </div>

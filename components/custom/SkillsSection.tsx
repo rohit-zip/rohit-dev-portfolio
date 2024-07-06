@@ -1,16 +1,16 @@
 import {TracingBeam} from "@/components/aceternity/TracingBeam";
-import {twMerge} from "tailwind-merge";
-import Image from "next/image";
 import WordPullUp from "@/components/aceternity/WordPullUp";
+import {backendSkillsData, courseworkData, frontendSkillsData, otherData} from "@/constants/skillsData";
+import BorderedButton from "@/components/custom/BorderedButton";
 
 export default function SkillsSection() {
     return (
         <TracingBeam className="px-0 md:px-6 mb-20">
             <div className="max-w-2xl mx-auto antialiased pt-4 relative">
                 {skillsContent.map((item, index) => (
-                    <div key={`content-${index}`} className="mb-10">
+                    <div key={`content-${index}`} className="mb-16">
                         <WordPullUp
-                            className="text-xl font-bold tracking-[-0.02em] text-black dark:text-white text-xl md:text-5xl md:leading-[5rem] text-left"
+                            className="font-bold tracking-[-0.02em] text-black dark:text-white text-xl md:text-5xl md:leading-[5rem] text-left"
                             words={item.title}
                         />
 
@@ -26,78 +26,85 @@ export default function SkillsSection() {
 
 const skillsContent = [
     {
-        title: "Backend Development",
+        title: "Backend Skills",
         description: (
             <>
                 <p>
-                    Sit duis est minim proident non nisi velit non consectetur. Esse
-                    adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-                    Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-                    incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-                    fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-                    nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-                    occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-                    officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-                    commodo et labore dolore commodo pariatur.
+                    I have extensive experience in developing scalable and robust backend applications. My technical
+                    expertise includes using Java and Spring Boot to create reliable and efficient services. I am
+                    proficient in implementing event-driven architecture with Kafka and managing relational databases
+                    such as PostgreSQL and MySQL. Additionally, I have significant experience working with NoSQL
+                    databases like MongoDB and Elasticsearch, ensuring optimal data storage and retrieval for
+                    high-performance applications.
                 </p>
-                <p>
-                    Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-                    veniam in commodo id reprehenderit adipisicing. Proident duis
-                    exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
-                </p>
-                <p>
-                    Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-                    reprehenderit deserunt amet laborum consequat adipisicing officia qui
-                    irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-                    Amet culpa officia aliquip deserunt veniam deserunt officia
-                    adipisicing aliquip proident officia sunt.
-                </p>
+                <div className={"flex gap-2 flex-wrap mt-4"}>
+                    {backendSkillsData.map((item, index) => (
+                        <BorderedButton data={item} key={index}/>
+                    ))}
+                </div>
             </>
-        ),
-        badge: "React",
-        image:
-            "/bloggios_demo.png",
+        )
     },
     {
-        title: "Lorem Ipsum Dolor Sit Amet",
+        title: "Frontend Skills",
         description: (
             <>
                 <p>
-                    Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-                    deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-                    non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-                    sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-                    velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-                    commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+                    I possess extensive experience in frontend development, with a strong proficiency in React JS and
+                    Next JS for creating dynamic and responsive web applications. My expertise includes state management
+                    using Redux, efficient data fetching with Axios and React Query, and rich text editing with Quill.
+                    Additionally, I have a solid background in developing cross-platform mobile applications using
+                    Flutter.
                 </p>
-                <p>
-                    In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-                    veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-                    reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-                    cillum ut mollit.
-                </p>
+                <div className={"flex gap-2 flex-wrap mt-4"}>
+                    {frontendSkillsData.map((item, index) => (
+                        <BorderedButton data={item} border={"emerald"} key={index}/>
+                    ))}
+                </div>
             </>
-        ),
-        badge: "Changelog",
-        image:
-            "/bloggios_demo.png",
+        )
     },
     {
-        title: "Lorem Ipsum Dolor Sit Amet",
+        title: "Devops and Other Tools",
         description: (
             <>
                 <p>
-                    Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-                    deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-                    non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-                    sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-                    velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-                    commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+                    I have hands-on experience with a diverse set of technologies crucial for modern software
+                    development and infrastructure management. This includes Azure and AWS for cloud computing, CI/CD
+                    pipelines for automated deployment, Docker and Docker Compose for containerization, and basic
+                    knowledge of Kubernetes for container orchestration. I'm proficient in VPS Hosting setup, Automated
+                    Build processes, and configuring Nginx for web server management. Additionally, I have experience
+                    with DNS configuration, monitoring and analytics tools like Prometheus, Grafana, Kibana, Logstash,
+                    and Metric Beats, as well as process managers like PM2. I have used Github Actions and Jenkins for
+                    continuous integration and continuous deployment (CI/CD) workflows.
                 </p>
+
+                <div className={"flex gap-2 flex-wrap mt-4"}>
+                    {otherData.map((item, index) => (
+                        <BorderedButton data={item} border={"emerald"} key={index}/>
+                    ))}
+                </div>
             </>
-        ),
-        badge: "Launch Week",
-        image:
-            "/bloggios_demo.png",
+        )
     },
+    {
+        title: "Coursework",
+        description: (
+            <>
+                <p>
+                    In my coursework, I've focused on key areas of computer science and software development:
+                    Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems (OS),
+                    System Design, Web Development, Mobile Application Development, and Data Structures and Algorithms.
+                    These studies have equipped me with essential skills in software design, database management, system
+                    scalability, web and mobile application development, and efficient algorithm design.
+                </p>
+
+                <div className={"flex gap-2 flex-wrap mt-4"}>
+                    {courseworkData.map((item, index) => (
+                        <BorderedButton data={item} key={index}/>
+                    ))}
+                </div>
+            </>
+        )
+    }
 ];
