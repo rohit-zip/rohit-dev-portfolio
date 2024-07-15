@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   keywords: "Rohit, Rohit Parihar, Rohit Software Engineer, Software Engineer, Rohit Software Developer, Rohit SDE-2, Rohit Parihar SDE-2, Rohit Java Developer, Rohit Parihar Java, Rohit Java, Rohit Parihar Java Full Stack Developer, Rohit Java Full Stack Developer, Rohit GlobalLogic, Rohit Parihar GlobalLogic, Rohit Hitachi, Rohit Parihar Hitachi, Passionate Java Full Stack Developer, Java Rohit, Rohit Spring Boot, Rohit Spring, Rohit Parihar Spring, Rohit Parihar Spring Boot Developer, Rohit Parihar Spring Boot Microservices, Rohit Parihar Architect, Rohit Parihar Technical Trainer, Rohit Parihar React Developer, Rohit React, Rohit Parihar React, Rohit React Developer, Rohit Next.js Developer, Rohit Parihar Next.js Developer, Rohit Next.js, Rohit Parihar Next.js, Rohit Flutter, Rohit Flutter Developer, Rohit Parihar Flutter, Rohit Parihar Flutter Developer, Rohit Parihar Python Developer, Rohit Parihar Bloggios, Rohit Bloggios, Bloggios, rohit-zip, beingrohit-exe, Rohit Parihar Linkedin, Rohit Linkedin",
   twitter: {
     card: "summary_large_image",
+    images: {
+      url: "/opengraph-image.png"
+    }
+  },
+  openGraph: {
+    images: {
+      url: "/opengraph-image.png"
+    }
   }
 };
 
