@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import "./globals.css";
 import React from "react";
+import {Head} from "next/document";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={'dark'}>
-      <body className={inter.className}>{children}</body>
+    <Head>
+      <meta property="og:image" content="https://rohit.bloggios.com/opengraph-image.png"/>
+    </Head>
+    <body className={inter.className}>{children}</body>
     </html>
   );
 }
