@@ -17,7 +17,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: {
-      url: "https://rohit.bloggios.com/opengraph-image.png"
+      url: "https://rohit.bloggios.com/opengraph-image.png",
+      href: "https://rohit.bloggios.com/opengraph-image.png"
     }
   }
 };
