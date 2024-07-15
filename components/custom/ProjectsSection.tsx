@@ -2,7 +2,7 @@
 
 import React from 'react';
 import {PinContainer} from "@/components/aceternity/PinContainer";
-import {projectsData} from "@/constants/projectsData";
+import {projectsData} from "@/configurations/ts/projectsData";
 import {FaLocationArrow} from "react-icons/fa";
 import {TextGenerateEffect} from "@/components/aceternity/TextGenerateEffect";
 

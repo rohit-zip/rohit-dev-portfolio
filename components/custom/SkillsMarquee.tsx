@@ -2,7 +2,7 @@ import React from 'react';
 import {cn} from "@/lib/utils";
 import Marquee from "@/components/aceternity/MagicMarquee";
 import DotPattern from "@/components/aceternity/DotPattern";
-import {marqueeA, marqueeB, marqueeD} from "@/constants/marqueeList";
+import {marqueeA, marqueeB, marqueeD} from "@/configurations/ts/marqueeList";
 import Image from "next/image";
 
 const ReviewCard = ({

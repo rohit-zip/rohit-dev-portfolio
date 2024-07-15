@@ -1,0 +1,13 @@
+{
+  "title": "Work Experience",
+  "experience": [
+    {
+      "id": 1,
+      "logo": "/assets/globallogic.png",
+      "company": "GlobalLogic - A Hitachi Group Company",
+      "designation": "Software Engineer",
+      "duration": "July 2022 - Present",
+      "description": "Spearheaded development of a scalable project using Spring Boot Microservices within Hitachi Energy Project."
+    }
+  ]
+}
